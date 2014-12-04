@@ -62,14 +62,10 @@ The second thing to do is:
 
 After using `run` and reaching a line with input or a breakpoint, you can walk through your code line by line using:
 
-`(gdb) step` <br>
-or <br>
-`(gdb) s`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) step` or `(gdb) s`
 
 `step` or `s` steps through your code line by line and also lets you walk through any function calls line by line.
 
-`(gdb) next` <br>
-or <br>
-`(gdb) n`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) next` or `(gdb) n`
 
 `next` or `n` steps through your code line by line, but will run function calls automatically.
