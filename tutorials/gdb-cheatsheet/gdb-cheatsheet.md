@@ -71,3 +71,16 @@ After using `run` and reaching a line with input or a breakpoint, you can walk t
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) print <variable name>` or `(gdb) p <variable name>`
 
 `print` or `p` prints out the value in any variable.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) kill` or `(gdb) k`
+
+`kill` or `k` kills the current program being run through gdb, but does not close gdb itself. This allows you to restart the debugging process with all breakpoints intact.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) reverse-step` or `(gdb) rs` or `(gdb) reverse-next` or `(gdb) rn`
+
+These commands allow you to move one line backwards in your code. In order to enable this, you need to run:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) record` after `(gdb) run`.
+
+
+
