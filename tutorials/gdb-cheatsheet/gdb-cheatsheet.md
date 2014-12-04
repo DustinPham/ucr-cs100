@@ -48,12 +48,12 @@ The first thing you should do after running gdb is set a breakpoint(s). To set a
 or <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) breakpoint <function name>`
 
-You can also shorten `breakpoint` to simply `b`.
+`breakpoint` can be replaced with `b`.
 
 The second thing to do is:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) run`
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`run` can also be shortened to `r`.
+`run` can be replaced with`r`.
 
 
