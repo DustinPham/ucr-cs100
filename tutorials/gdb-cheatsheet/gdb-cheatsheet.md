@@ -48,6 +48,8 @@ The first thing you should do after running gdb is set a breakpoint(s). To set a
 
 `breakpoint` can be replaced with `b`.
 
+In general, most gdb commands can be shortened.
+
 The second thing to do is:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) run` or `(gdb) r`
