@@ -30,13 +30,9 @@ After compilation, you want to run it in the following format:
 
 There are many GDB flags, but most of them suck balls. The most useful so far in this class are :<br>
 
---args
-
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$ gdb --args <program> <arguments>`
 
 This allows us to pass command line arguments into our program which is run through gdb. This is like program-ception.
-
--quiet or -q
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$ gdb -q <program>`
 
