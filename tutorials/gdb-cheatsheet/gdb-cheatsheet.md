@@ -67,3 +67,7 @@ After using `run` and reaching a line with input or a breakpoint, you can walk t
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) next` or `(gdb) n`
 
 `next` or `n` steps through your code line by line, but will run function calls automatically.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) print <variable name>` or `(gdb) p <variable name>`
+
+`print` or `p` prints out the value in any variable.
