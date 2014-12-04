@@ -50,9 +50,7 @@ The first thing you should do after running gdb is set a breakpoint(s). To set a
 
 The second thing to do is:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) run`
-
-`run` can be replaced with`r`.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) run` or `(gdb) r`
 
 `run` runs the program until it ends, accepts input, or until it reaches a breakpoint.
 
