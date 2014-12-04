@@ -44,9 +44,7 @@ You can also chain flags together.
 
 The first thing you should do after running gdb is set a breakpoint(s). To set a breakpoint in your program simply type:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) breakpoint <line number>`<br>
-or <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) breakpoint <function name>`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) breakpoint <line number>` or `(gdb) breakpoint <function name>`
 
 `breakpoint` can be replaced with `b`.
 
