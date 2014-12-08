@@ -64,18 +64,20 @@ After using `run` and reaching a line with input or a breakpoint, you can walk t
 
 `print` prints out the value in any variable.
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) record` or `(gdb) rec` after `(gdb) run`.
+
+`record` will enable the `reverse-step` and `reverse-next` commands so the user can step backwards through their program.
+
+*Note: Using `record` will cause your program to run much slower because it requires a lot of memory to keep track of previous actions.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) reverse-step` or `(gdb) rs` and `(gdb) reverse-next` or `(gdb) rn`
+
+These commands allow you to move one line backwards in your code.
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) kill` or `(gdb) k`
 
 `kill` kills the current program being run through gdb, but does not close gdb itself. This allows you to restart the debugging process with all breakpoints intact.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) record` or `(gdb) rec` after `(gdb) run`.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) quit` or `(gdb) q`
 
-`record`will enable two extra commands that the user can use to step backwards through their program:
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) reverse-step` or `(gdb) rs` or `(gdb) reverse-next` or `(gdb) rn`
-
-These commands allow you to move one line backwards in your code. In order to enable this, you need to run:
-
-
-
-
+`quit` does what it sounds like; it quits gdb!
