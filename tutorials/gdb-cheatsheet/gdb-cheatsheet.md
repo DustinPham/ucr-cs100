@@ -54,23 +54,23 @@ After using `run` and reaching a line with input or a breakpoint, you can walk t
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) step` or `(gdb) s`
 
-`step` or `s` steps through your code line by line and also lets you walk through any function calls line by line.
+`step` steps through your code line by line and also lets you walk through any function calls line by line.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) next` or `(gdb) n`
 
-`next` or `n` steps through your code line by line, but will run function calls automatically.
+`next` steps through your code line by line, but will run function calls automatically.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) print <variable name>` or `(gdb) p <variable name>`
 
-`print` or `p` prints out the value in any variable.
+`print` prints out the value in any variable.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) kill` or `(gdb) k`
 
-`kill` or `k` kills the current program being run through gdb, but does not close gdb itself. This allows you to restart the debugging process with all breakpoints intact.
+`kill` kills the current program being run through gdb, but does not close gdb itself. This allows you to restart the debugging process with all breakpoints intact.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) record` after `(gdb) run`.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) record` or `(gdb) rec` after `(gdb) run`.
 
-`record` or `rec` will enable two extra commands that the user can use to step backwards through their program:
+`record`will enable two extra commands that the user can use to step backwards through their program:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) reverse-step` or `(gdb) rs` or `(gdb) reverse-next` or `(gdb) rn`
 
