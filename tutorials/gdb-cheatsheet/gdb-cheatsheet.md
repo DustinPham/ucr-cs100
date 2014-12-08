@@ -56,7 +56,7 @@ After using `run` and reaching a line with input or a breakpoint, there are many
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) continue` or `(gdb) cont`
 
-`continue` continues running the program from wherever it stopped at, such as a breakpoint, a watchpoint, or a conditional breakpoint.
+`continue` continues running the program from wherever it stopped at, such as a breakpoint, a watchpoint, or a conditional breakpoint. The program will continue running until it stops or another pause point is reached.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) step` or `(gdb) s`
 
