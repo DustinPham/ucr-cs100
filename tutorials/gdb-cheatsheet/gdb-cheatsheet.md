@@ -14,9 +14,11 @@ After compilation, you want to run it in the following format:
 You can also just run `gdb` and start your program within gdb like so:
 
 ```
-  $ gdb a.out <flags>
-  (gdb) a.out
+  $ gdb <flags>
+  (gdb) file <executable>
 ```
+
+`file` is the command that tells gdb that the following argument is the program to be debugged.
 
 ###GDB Flags
 
@@ -62,7 +64,11 @@ After using `run` and reaching a line with input or a breakpoint, you can walk t
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) print <variable name>` or `(gdb) p <variable name>`
 
-`print` prints out the value in any variable.
+`print` prints out the value in any variable once.  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) display <variable name>` or `(gdb) disp <variable name>`
+
+`display` prints out `<variable name>` after every `step` or `next` so you can see what value is contained in the variable. You can use `display` to keep track of multiple variables and only have to declare it once within gdb, unlike `print`.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) record` or `(gdb) rec` after `(gdb) run`.
 
