@@ -26,15 +26,22 @@ After compilation, you want to run it in the following format:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$ gdb a.out <flags>`
 
+You can also just run `gdb` and start your program within gdb like so:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$ gdb a.out <flags>` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) a.out`
+
+
+
 ###GDB Flags
 
-There are many GDB flags, but most of them suck balls. The most useful so far in this class are :<br>
+There are many GDB flags, but most of them aren't too useful. The most useful so far in this class are :<br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$ gdb --args <program> <arguments>`
 
 This allows us to pass command line arguments into our program which is run through gdb. This is like program-ception.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$ gdb -q <program>`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$ gdb -quiet <program>` or `$ gdb -q <program>`
 
 If you don't want your terminal to be flooded with nonsensemoo, then you can use this flag.
 
