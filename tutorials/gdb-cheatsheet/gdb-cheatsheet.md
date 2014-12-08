@@ -36,15 +36,11 @@ You can also chain flags together.
 
 ###Running GDB
 
-The first thing you should do after running gdb is set a breakpoint(s). To set a breakpoint in your program simply type:
+All gdb commands can be shortened to the shortest recognizable command (usually a single letter).
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) breakpoint <line number>` or `(gdb) breakpoint <function name>`
 
 `breakpoint` can be replaced with `b`.
-
-All gdb commands can be shortened to the shortest recognizable command (usually a single letter).
-
-The second thing to do is:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) run` or `(gdb) r`
 
@@ -52,7 +48,15 @@ The second thing to do is:
 
 ###Using GDB
 
-After using `run` and reaching a line with input or a breakpoint, you can walk through your code line by line using:
+After using `run` and reaching a line with input or a breakpoint, there are many commands that you can use.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) watch <variable name>` or `(gdb) wa <variable name>`
+
+`watch` will cause the program to pause at wherever the variable changes.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) continue` or `(gdb) cont`
+
+`continue` continues running the program from wherever it stopped at, such as a breakpoint, a watchpoint, or a conditional breakpoint.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) step` or `(gdb) s`
 
