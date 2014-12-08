@@ -1,21 +1,6 @@
 GDB Cheatsheet
 ===
 
-
-###GDB installation
-
-If you already have gdb installed, you can skip this section! w00t!
-
-Step 1: INSTALL LINUX
-
-Step 2: Run these commands in the terminal
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. `$ sudo apt-get update`
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. `$ sudo apt-get install gdb`
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. `pat yourself on the back w000t`
-
 ###Starting GDB
 
 After you finish up your sweet program, you should generally compile it with your standard flags, but also with the `-g` flag. The `-g` flag lets gdb debug our executable and gives us a bunch of helpful feedback. Without it, gdb will still run your program, but it won't allow you to step through to see if there's any errors, and where they occur. 
@@ -28,10 +13,10 @@ After compilation, you want to run it in the following format:
 
 You can also just run `gdb` and start your program within gdb like so:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$ gdb a.out <flags>` <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) a.out`
-
-
+```
+  $ gdb a.out <flags>
+  (gdb) a.out
+```
 
 ###GDB Flags
 
@@ -55,7 +40,7 @@ The first thing you should do after running gdb is set a breakpoint(s). To set a
 
 `breakpoint` can be replaced with `b`.
 
-In general, most gdb commands can be shortened.
+All gdb commands can be shortened to the shortest recognizable command (usually a single letter).
 
 The second thing to do is:
 
@@ -83,11 +68,14 @@ After using `run` and reaching a line with input or a breakpoint, you can walk t
 
 `kill` or `k` kills the current program being run through gdb, but does not close gdb itself. This allows you to restart the debugging process with all breakpoints intact.
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) record` after `(gdb) run`.
+
+`record` or `rec` will enable two extra commands that the user can use to step backwards through their program:
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) reverse-step` or `(gdb) rs` or `(gdb) reverse-next` or `(gdb) rn`
 
 These commands allow you to move one line backwards in your code. In order to enable this, you need to run:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(gdb) record` after `(gdb) run`.
 
 
 
